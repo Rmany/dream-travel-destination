@@ -4,71 +4,216 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cairo+Play:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Visit Zambia</title>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
-    ></script>
+    />
+
     <style>
       h1 {
-        color: blue;
+        color: #000;
+        font-family: "Abril Fatface", cursive;
+        font-size: 80px;
+        font-weight: 200;
+        text-align: center;
       }
+      body {
+        font-family: "Cairo Play", sans-serif;
+        color: #000;
+      }
+      .btn {
+        width: 30%;
+        display: block;
+        margin: 0 auto;
+      }
+      .container {
+        width: 100%;
+      }
+      .intro {
+        margin: 40px 0px;
+        padding-top: 80px;
+        padding-left: 150px;
+        width: 90%;
+      }
+      .highlight-feature {
+        padding: 20px 10px;
 
+        border-radius: 20px;
+        margin: 10px 5px;
+        text-align: center;
+        width: 32%;
+        box-shadow: 4px 4px 18px -2px rgba(35, 34, 34, 0.68);
+      }
       .header-image {
         width: 100%;
       }
+      .header {
+        background-image: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 1) 12%,
+            rgba(255, 255, 255, 0) 100%
+          ),
+          url("https://cdn-images.go2africa.com/wp-content/uploads/2017/01/17074704/vic-falls-1024x685.jpg");
+
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 220px;
+        margin-top: 0px;
+      }
+
+      .sml-img {
+        display: block;
+        width: 250px;
+        align-items: center;
+      }
+      .highlight-img {
+        height: 250px;
+        display: block;
+        margin: 5px auto;
+      }
+      .highlight-info {
+        height: 250px;
+        padding: 20px 5px 0px 5px;
+      }
+      .highlight-btn {
+        width: 80%;
+        margin-top: 10px;
+      }
+      .when-to-visit {
+        margin: 20px auto;
+        text-align: center;
+      }
+      .when-to-visit p {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 0px;
+      }
+      .when-to-visit span {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .when-to-visit h3 {
+        margin: 20px auto;
+      }
+      button.flag-green {
+        background-color: #198a00;
+        border: #198a00;
+        color: #fff;
+      }
+      button.flag-red {
+        background-color: #de2010;
+        border: #de2010;
+        color: #fff;
+      }
+      button.flag-gold {
+        background-color: #ef7d00;
+        border: #ef7d00;
+        color: #fff;
+      }
     </style>
+    <title>Visit Zambia</title>
   </head>
   <body>
     <div class="container">
-      <img
-        src="https://cdn-images.go2africa.com/wp-content/uploads/2017/01/17074704/vic-falls-1024x685.jpg"
-        alt="Victoria Falls"
-        class="header-image"
-      />
-      <h1>Visit Zambia</h1>
-      <p class="more-info">Info about Zambia</p>
-      <img
-        src="https://www.southluangwa.com/assets/img/mfuwe-lodge-south-luangwa-national-park.jpg"
-        alt="South Luangwa National Park"
-      />
-      <img
-        src="https://tse1.mm.bing.net/th?id=OIP.4FceaOrscOI4RvYZt6d9zwHaFj&pid=Api"
-        alt="Lake Tanganyika"
-      />
-      <img
-        src="https://tse4.mm.bing.net/th?id=OIP.A5qsUZWBCiAeulZPETqvCAHaE8&pid=Api"
-        alt="Devil's Pool"
-      />
-      <h2>Highlights</h2>
-      <h3>Victoria Falls</h3>
-      <p>Info about Viccy Falls</p>
-      <img
-        src="https://tse2.mm.bing.net/th?id=OIP.B7f_sRNp47CF3XuPkPm61AHaE8&pid=Api"
-        alt="Victoria Falls"
-      />
-      <button>Find out more</button>
-      <h3>Safari</h3>
-      <p>Info about Safari</p>
-      <img
-        src="https://tse1.mm.bing.net/th?id=OIP.7-4hdldA6bJyQFiPotPU5QHaE8&pid=Api"
-        alt="Lower Zambezi Safari"
-      />
-      <button>Find out more</button>
-      <h3>Lake Tanganyika</h3>
-      <p>Info about the lake</p>
-      <img
-        src="https://tse3.mm.bing.net/th?id=OIP.qdOvBxBD7XZs0H92nrWowAHaEo&pid=Api"
-        alt="Lake Tanganyika and palm tree"
-      />
-      <button>Find out more</button>
-      <h2>When to visit</h2>
-      <h3>Best for safari: October</h3>
-      <h3>Best for the Victoria Falls Experience: April</h3>
-      <h3>Not too hot: August</h3>
-      <h3>No matter when you go, Zambia has something to offer!</h3>
+      <div class="header">
+        <h1>Visit Zambia</h1>
+        <div class="row intro">
+          <h2>About Zambia</h2>
+          <p class="more-info">
+            Zambia is a completely landlocked country in Southern Africa
+            bordered by Angola, Botswana, Democratic Republic of Congo, Malawi,
+            Mozambique, Namibia, Tanzania and Zimbabwe. Its border with Botswana
+            is only a kilometre long while the Victoria Falls forms a natural
+            barrier with Zimbabwe.
+          </p>
+          <p>
+            In addition to major conservation areas, the country also has
+            considerable mineral wealth. Copper is mined in the north and forms
+            a significant part of Zambia’s income. Lusaka, the capital, is
+            growing quickly with over three million people calling it home. In
+            the rural areas, subsistence farming provides a livelihood for many
+            people.
+          </p>
+          <button class="btn btn-success">Find out more</button>
+        </div>
+      </div>
+
+      <div class="row highlights">
+        <h2>Highlights</h2>
+        <div class="col-4 highlight-feature">
+          <h3>Victoria Falls</h3>
+          <p class="highlight-info">
+            The Victoria Falls presents a spectacular sight of awe-inspiring
+            beauty and grandeur on the Zambezi River, forming a natural border
+            between Zambia and Zimbabwe. It was described by the Kololo tribe
+            living in the area as "Mosi-oa-Tunya" – "The Smoke that Thunders"
+            for the immense spray and incredible noise caused by the rushing
+            water. Victoria Falls is now also known as the greatest curtain of
+            falling water in the world when its width and height are combined.
+          </p>
+          <img
+            src="https://tse2.mm.bing.net/th?id=OIP.B7f_sRNp47CF3XuPkPm61AHaE8&pid=Api"
+            alt="Victoria Falls"
+            class="highlight-img img-thumbnail"
+          />
+          <button class="btn highlight-btn flag-green">Find out more</button>
+        </div>
+        <div class="col-4 highlight-feature">
+          <h3>National Parks</h3>
+          <p class="highlight-info">
+            There are 20 national parks and 34 game management areas in Zambia.
+            South Luangwa, Kafue and Lower Zambezi rank among the finest
+            national parks in the world. The newest park to be proclaimed is
+            Lusaka National Park, just outside the capital, which opened to the
+            public in June 2015. The national parks are administered by ZAWA,
+            the Zambia Wildlife Authority.
+          </p>
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.7-4hdldA6bJyQFiPotPU5QHaE8&pid=Api"
+            alt="Lower Zambezi Safari"
+            class="highlight-img img-thumbnail"
+          />
+          <button class="btn highlight-btn flag-red">Find out more</button>
+        </div>
+        <div class="col-4 highlight-feature">
+          <h3>Lake Tanganyika</h3>
+          <p class="highlight-info">
+            Tanganyika’s waters lap Tanzania, Burundi, Democratic Republic of
+            Congo and Zambia. It is the longest freshwater lake in the world and
+            the second deepest after Lake Baikal in Russia. The immense depth is
+            because it lies in the Great Rift Valley, which also has created its
+            steep shoreline. he clear waters host more than 350 different
+            species of fish and is well known for aquarium fish exports and
+            excellent angling.
+          </p>
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.qdOvBxBD7XZs0H92nrWowAHaEo&pid=Api"
+            alt="Lake Tanganyika and palm tree"
+            class="highlight-img img-thumbnail"
+          />
+          <button class="btn flag-gold highlight-btn">Find out more</button>
+        </div>
+      </div>
+      <div class="when-to-visit">
+        <h2>When to visit</h2>
+        <p class="safari">Best for safari:</p>
+        <span>October</span>
+        <p class="v-falls">Best for the Victoria Falls Experience:</p>
+        <span>April</span>
+
+        <p class="august">Not too hot:</p>
+        <span>August</span>
+        <h3>No matter when you go, Zambia has something to offer!</h3>
+      </div>
       <small>Coded by Martha Germany</small>
     </div>
   </body>
